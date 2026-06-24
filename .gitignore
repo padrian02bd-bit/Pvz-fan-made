@@ -1,0 +1,23 @@
+# Godot
+.godot/
+*.import/
+*.translation
+*.pot
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/build/
+/dist/
+*.exe
+*.apk
+*.ipa
