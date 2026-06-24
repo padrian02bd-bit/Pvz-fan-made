@@ -1,8 +1,6 @@
-# Godot
-.godot/
-*.import/
-*.translation
-*.pot
+# Node modules
+node_modules/
+npm-debug.log
 
 # IDE
 .vscode/
@@ -19,5 +17,3 @@ Thumbs.db
 /build/
 /dist/
 *.exe
-*.apk
-*.ipa

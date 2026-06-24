@@ -1,69 +1,102 @@
-# PvZ Fangame - Godot Edition
+# PvZ Fangame - Phaser 3 Edition
 
-A Plants vs. Zombies fangame built with Godot Engine.
+A Plants vs. Zombies fangame built with **Phaser 3** and JavaScript. Play directly in your browser on mobile or desktop!
 
-## Features
+## 🎮 Features
 
-- **Original Plants & Zombies**: Classic PvZ mechanics
-- **New Plants**: Custom plant types with unique abilities
-- **New Zombies**: Custom zombie types with different behaviors
-- **Mobile-First**: Designed for mobile platforms (iOS/Android)
-- **Tower Defense Gameplay**: Plant defense strategy gameplay
+- **Tower Defense Gameplay**: Plant defenders, manage sun currency
+- **Original Plants**: Sunflower, Peashooter, Walnut
+- **Zombie Waves**: Basic zombies spawn continuously
+- **Mobile-Friendly**: Play on any device with a web browser
+- **Real-time Action**: Dynamic plant-vs-zombie battles
 
-## Project Structure
+## 🚀 Quick Start
+
+### Option 1: Play Online (Easiest)
+1. Open this repository in GitHub
+2. Go to **Settings** → **Pages**
+3. Enable GitHub Pages from the `main` branch
+4. Visit the live URL to play!
+
+### Option 2: Play Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/padrian02bd-bit/Pvz-fan-made.git
+   cd Pvz-fan-made
+   ```
+2. Open `index.html` in your web browser
+   - Or use a local server:
+     ```bash
+     python -m http.server 8000
+     # Then visit http://localhost:8000
+     ```
+
+## 📱 How to Play
+
+1. **Select a Plant** - Click plant buttons at the top
+2. **Place on Grid** - Tap a cell to plant
+3. **Manage Sun** - You start with 100 sun
+   - Sunflower: 50 sun (generates more sun)
+   - Peashooter: 100 sun (attacks zombies)
+   - Walnut: 150 sun (defensive)
+4. **Defend** - Stop zombies from reaching the left side
+
+## 🛠️ Game Mechanics
+
+### Plants
+- **Sunflower** 🌻 - Generates sun over time
+- **Peashooter** 🟢 - Shoots projectiles at zombies
+- **Walnut** 🟤 - High health, slows zombies
+
+### Zombies
+- **Basic Zombie** 🧟 - Standard enemy
+- **Cone Zombie** (coming soon) - Armored variant
+- **Bucket Zombie** (coming soon) - Heavy variant
+
+## 📁 Project Structure
 
 ```
 Pvz-fan-made/
-├── scenes/           # Game scenes
-│   ├── main_scene.tscn
-│   ├── plants/
-│   ├── zombies/
-│   └── ui/
-├── scripts/          # GDScript code
-│   ├── plant.gd
-│   ├── zombie.gd
-│   ├── game_manager.gd
-│   └── utils/
-├── assets/           # Sprites, sounds, fonts
-│   ├── sprites/
-│   ├── sounds/
-│   └── fonts/
-└── project.godot     # Godot project file
+├── index.html          # Main game page
+├── js/
+│   └── main.js        # Phaser 3 game code
+├── README.md          # This file
+└── .gitignore
 ```
 
-## Getting Started
+## 🎨 Customization
 
-1. **Install Godot**: Download [Godot Engine 4.x](https://godotengine.org/)
-2. **Open Project**: File → Open Project → Select this folder
-3. **Run Game**: Press F5 or click the Play button
+Want to modify the game? Edit `js/main.js`:
 
-## Game Mechanics
+- **Change grid size**: Modify `createGameGrid()` rows/cols
+- **Adjust sun costs**: Edit `createPlantButtons()`
+- **Change zombie speed**: Modify `Zombie.speed`
+- **Add new plants**: Create new entries in `plantTypes`
 
-### Plants
-- **Sunflower**: Generates sun (currency)
-- **Peashooter**: Basic attack plant
-- **Walnut**: Defensive plant
-- *(More plants to come)*
+## 📚 Resources
 
-### Zombies
-- **Basic Zombie**: Standard enemy
-- **Cone Zombie**: Armored zombie
-- *(More zombies to come)*
+- [Phaser 3 Documentation](https://newdocs.phaser.io/)
+- [Phaser Examples](https://phaser.io/examples)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-## Development
+## 🎯 Next Steps
 
-This is a beginner-friendly project. Feel free to:
-- Add new plant/zombie types
-- Create new levels
-- Improve UI/UX
-- Add sound effects and animations
+- [ ] Add projectiles and collision detection
+- [ ] Implement sun generation
+- [ ] Create level progression
+- [ ] Add sound effects
+- [ ] Custom plant/zombie sprites
+- [ ] Animations and particle effects
+- [ ] Score system and leaderboard
 
-## License
+## 📄 License
 
-MIT License (feel free to modify and distribute)
+MIT License - Feel free to modify and share!
 
-## Resources
+## 🤝 Contributing
 
-- [Godot Documentation](https://docs.godotengine.org/)
-- [Godot Tutorials](https://www.youtube.com/@GodotEngine)
-- [2D Game Development Guide](https://docs.godotengine.org/en/stable/getting_started/introduction/first_2d_game.html)
+Feel free to fork, improve, and submit pull requests!
+
+---
+
+**Made with ❤️ and Phaser 3**
